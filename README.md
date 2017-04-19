@@ -27,7 +27,7 @@ for details.
 
 ## Acknowledgement
 
-- Our torch implementation for the paragraph-level QG is based on OpenNMT project.
+- Our implementation for the paragraph-level QG is based on [OpenNMT](http://opennmt.net/) project.
 
 ## Citation
 
