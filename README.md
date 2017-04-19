@@ -25,6 +25,23 @@ for details.
 	  url = {http://aclweb.org/anthology/D14-1080}
 	}-->
 
+
+
+## Citation
+
+If you find our work useful for your research, please cite:
+
+```
+@inproceedings{du2017question,
+    title={Learning to Ask: Neural Question Generation for Reading Comprehension},
+    author={Du, Xinya and Shao, Junru and Cardie, Claire},
+    booktitle={Association for Computational Linguistics (ACL)},
+    year={2017}
+  }
+```
+
+## Contact
+
 Feel free to ask questions: xdu [a] cs [o] cornell [o] edu.
 
 
