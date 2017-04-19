@@ -25,7 +25,9 @@ for details.
 	  url = {http://aclweb.org/anthology/D14-1080}
 	}-->
 
+## Acknowledgement
 
+- Our torch implementation for the paragraph-level QG is based on OpenNMT project.
 
 ## Citation
 
