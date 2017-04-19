@@ -2,7 +2,7 @@
 
 ## Overview
 
-Implementation of neural question generation system for reading comprehension tasks. Sentence-level model and paragraph-level model will be made available soon.
+Implementation of neural question generation system for reading comprehension tasks. Paragraph-level model and sentence-level model will be made available soon.
 
 See the paper,
 >"Learning to Ask: Neural Question Generation for Reading Comprehension"
