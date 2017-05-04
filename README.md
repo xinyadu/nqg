@@ -11,42 +11,6 @@ See the paper,
 
 >ACL 2017
 
-for details.
-
-<!--If you use my code, please cite:
-
-	@InProceedings{irsoy-drnt,
-	  author = {\.Irsoy, Ozan and Cardie, Claire},
-	  title = {Opinion Mining with Deep Recurrent Neural Networks},
-	  booktitle = {Proceedings of the Conference on Empirical Methods in Natural Language Processing},
-	  pages = {720--728},
-	  year = {2014},
-	  location = {Doha, Qatar},
-	  url = {http://aclweb.org/anthology/D14-1080}
-	}-->
-
-## Acknowledgement
-
-- Our implementation for the paragraph-level QG is based on [OpenNMT](http://opennmt.net/) project.
-
-## Citation
-
-If you find our work useful for your research, please cite:
-
-```
-@inproceedings{du2017question,
-    title={Learning to Ask: Neural Question Generation for Reading Comprehension},
-    author={Du, Xinya and Shao, Junru and Cardie, Claire},
-    booktitle={Association for Computational Linguistics (ACL)},
-    year={2017}
-  }
-```
-
-## Contact
-
-Feel free to ask questions: xdu [a] cs [o] cornell [o] edu.
-
-
 <!--## Getting Started
 
 Assuming you have g++ and the code here, running the bash script as
