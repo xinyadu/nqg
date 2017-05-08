@@ -6,9 +6,9 @@ The structure of this folder is:
 
     data
     ├── processed
-    │   ├── src-{train,val,test}.txt
-    │   ├── tgt-{train,val,test}.txt
-    │   └── para-{train,val,test}.txt
+    │   ├── src-{train, dev, test}.txt
+    │   ├── tgt-{train, dev, test}.txt
+    │   └── para-{train, dev, test}.txt
     │  
     ├── raw
     │   ├── train.json
