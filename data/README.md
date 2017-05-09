@@ -22,7 +22,7 @@ The structure of this folder is:
 
 Our split is done at the article level, the `doclist-*.txt` contains the article titles of each split. We use the original dev set in the SQuAD dataset as our dev set, we split the original training set into our training set and test set.
 
-The `processed` folder includes input sentence files (`src-*.txt`), corresponding questions files (`tgt-*.txt`), and the files of paragraphs which contain the input sentence (`para-*.txt`).
+The `processed` folder includes input sentence files (`src-*.txt`), corresponding questions files (`tgt-*.txt`), and the files of paragraphs which contain the input sentence (`para-*.txt`). The sentences/questions/paragraphs are tokenized.
 
 The `raw` folder includes the raw data files from the SQuAD dataset, split into train, dev, test set.
 
