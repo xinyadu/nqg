@@ -1,0 +1,8 @@
+*.t7
+*.dict
+doc/tree
+
+#*.sh
+#*.txt
+output.txt
+pred.txt
