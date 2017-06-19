@@ -10,6 +10,7 @@ See the [paper](https://arxiv.org/abs/1705.00106),
 >Xinya Du, Junru Shao and Claire Cardie
 
 >ACL 2017
+<<<<<<< HEAD
 
 ## Requirements
 
