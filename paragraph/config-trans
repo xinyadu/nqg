@@ -1,0 +1,5 @@
+src=../data/processed/src-dev.txt 
+par=../data/processed/para-dev.txt 
+beam_size=3
+gpuid=1
+replace_unk=true
