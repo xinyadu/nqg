@@ -1,0 +1,17 @@
+data=data/qg-train.t7 
+save_model=model/840B.300d.600rnn
+gpuid=1
+epochs=15
+brnn=true
+brnn_merge=concat
+dropout=0.3
+optim=sgd
+learning_rate=1
+layers=2
+start_decay_at=8
+pre_word_vecs_enc=data/embs/qg.src.840B.300d.t7 
+pre_word_vecs_dec=data/embs/qg.tgt.840B.300d.t7 
+rnn_size=600
+word_vec_size=300
+fix_word_vecs_enc=true
+fix_word_vecs_dec=true

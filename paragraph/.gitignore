@@ -1,0 +1,11 @@
+*.t7
+*.dict
+*.npy
+doc/tree
+
+#*.sh
+#*.txt
+output.txt
+pred.txt
+*.pyc
+
