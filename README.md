@@ -10,7 +10,6 @@ See the [paper](https://arxiv.org/abs/1705.00106),
 >Xinya Du, Junru Shao and Claire Cardie
 
 >ACL 2017
-<<<<<<< HEAD
 
 ## Requirements
 
@@ -18,6 +17,39 @@ See the [paper](https://arxiv.org/abs/1705.00106),
 
 [tds](https://github.com/torch/tds)
 
+## Paragraph-level model
+
+	cd paragraph
+
+
+### Preprocessing:
+
+#### Generate src/target dictionary
+
+```
+th preprocess.lua -config config-preprocess
+```
+
+#### Generate embedding files (.t7)
+
+First replace ```<path to embedding txt file>``` in ```preprocess_embedding.sh``` with real path, then run:
+
+
+	./preprocess_embedding.sh
+	
+	th ./data/convert.lua
+
+
+### Training:
+
+	th train.lua -config config-train
+
+You can adjust the rnn size for paragraph encoder and sentence encoder by changing ```para_rnn_size``` and ```sent_rnn_size``` respectively.
+
+### Generating:
+
+	th translate.lua -model model/<model file name> -config config-trans
+	
 
 ## Sentence-level model
 
@@ -54,38 +86,7 @@ See the [paper](https://arxiv.org/abs/1705.00106),
 	th translate.lua -model model/<model file name> -config config-trans
 
 
-## Paragraph-level model
 
-	cd paragraph
-
-
-### Preprocessing:
-
-#### Generate src/target dictionary
-
-```
-th preprocess.lua -config config-preprocess
-```
-
-#### Generate embedding files (.t7)
-
-First replace ```<path to embedding txt file>``` in ```preprocess_embedding.sh``` with real path, then run:
-
-
-	./preprocess_embedding.sh
-	
-	th ./data/convert.lua
-
-
-### Training:
-
-	th train.lua -config config-train
-
-You can adjust the rnn size for paragraph encoder and sentence encoder by changing ```para_rnn_size``` and ```sent_rnn_size``` respectively.
-
-### Generating:
-
-	th translate.lua -model model/<model file name> -config config-trans
 
 
 ## Sample outputs (interesting!)
