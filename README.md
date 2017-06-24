@@ -86,7 +86,10 @@ You can adjust the rnn size for paragraph encoder and sentence encoder by changi
 	th translate.lua -model model/<model file name> -config config-trans
 
 
+## Evaluation
 
+	cd qgevalcap
+	./eval.py --out_file <path to output file>
 
 
 ## Sample outputs (interesting!)
