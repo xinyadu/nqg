@@ -12,28 +12,6 @@ import sys
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-def find_longest_subs(sentence):
-    # stop = [',', '.', ';']
-    # sub =
-    s = sentence[:]
-    s = s.replace('?', '.')
-    s = s.replace('!', '.')
-    s = s.replace(';', '.')
-    s = s.replace(',', '.')
-    s = s.split('.')
-
-    longest = None
-    leng = 0
-    for sub_s in s:
-        if len(sub_s) > leng:
-            longest = sub_s[:]
-            leng = len(sub_s)
-
-    if len(s) == 1:
-        return s[0]
-    else:
-        return s[0]
-
 class QGEvalCap:
     def __init__(self, gts, res):
         self.gts = gts
@@ -105,12 +83,6 @@ def eval(out_file, src_file, tgt_file, isDIn = False, num_pairs = 500):
     for pair in pairs[:]:
         key = pair['tokenized_sentence']
         res[key] = [pair['prediction'].encode('utf-8')]
-
-        ## baseline: directly use the input sentence as prediction
-        if isDIn:
-            # use longest sub sentence of the input, rather than the whole input sentence (better?)
-            res[key] = [find_longest_subs(key)]
-            pass
 
         ## gts 
         gts[key].append(pair['tokenized_question'].encode('utf-8'))
