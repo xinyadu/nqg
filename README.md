@@ -130,7 +130,7 @@ You can adjust the rnn size for paragraph encoder and sentence encoder by changi
 
 ## Acknowledgment
 
-Our implementation is adapted from [OpenNMT](http://opennmt.net).
+Our implementation is adapted from [OpenNMT](http://opennmt.net). The evaluation scripts are adapted from [coco-caption](https://github.com/tylin/coco-caption) repo.
 
 ## License
 
