@@ -70,7 +70,7 @@ You can adjust the rnn size for paragraph encoder and sentence encoder by changi
 	--dict ./data/qg.{src,tgt}.dict 
 	--output ./data/qg.{src,tgt}.840B.300d.npy
 
-	th ./data/convert.lua
+	cd ./data; th convert.lua; cd ..;
 
 
 ### Training:
