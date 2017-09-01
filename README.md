@@ -75,7 +75,7 @@ You can adjust the rnn size for paragraph encoder and sentence encoder by changi
 
 ### Training:
 
-
+	mkdir model
 	th train.lua -config config-train
 
 
