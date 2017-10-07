@@ -37,10 +37,16 @@ First replace ```<path to embedding txt file>``` in ```preprocess_embedding.sh``
 
 	./preprocess_embedding.sh
 	
-	th ./data/convert.lua
+	mkdir data/embs
+	
+	cd data 
+	
+	th convert.lua
 
 
 ### Training:
+
+        cd ..
 
 	th train.lua -config config-train
 
