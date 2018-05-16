@@ -2,7 +2,15 @@
 
 ## Overview
 
-Implementation of neural question generation system for reading comprehension tasks. Paragraph-level model and sentence-level model will be made available soon. Our implementation is adapted from [OpenNMT](http://opennmt.net).
+Implementation of neural question generation system for reading comprehension tasks. Paragraph-level model and sentence-level model will be made available soon.
+
+If you use our data or code, please cite our paper as follows:  
+  > @inproceedings{du2017learning,  
+  > &nbsp; &nbsp; title={Learning to Ask: Neural Question Generation for Reading Comprehension},  
+  > &nbsp; &nbsp; author={Du, Xinya and Shao, Junru and Cardie, Claire},  
+  > &nbsp; &nbsp; booktitle={Association for Computational Linguistics (ACL)},  
+  > &nbsp; &nbsp; year={2017}  
+  > }  
 
 See the [paper](https://arxiv.org/abs/1705.00106),
 >"Learning to Ask: Neural Question Generation for Reading Comprehension"
