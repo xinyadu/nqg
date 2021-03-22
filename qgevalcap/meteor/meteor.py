@@ -55,10 +55,13 @@ class Meteor:
 
     def _stat(self, hypothesis_str, reference_list):
         # SCORE ||| reference 1 words ||| reference n words ||| hypothesis words
+        hypothesis_str = hypothesis_str.decode('utf-8')
+        reference_list = [ref.decode('utf-8') for ref in reference_list]
+
         hypothesis_str = hypothesis_str.replace('|||','').replace('  ',' ')
-        score_line = ' ||| '.join(('SCORE', ' ||| '.join(reference_list), hypothesis_str.encode('utf-8')))
+        score_line = ' ||| '.join(('SCORE', ' ||| '.join(reference_list), hypothesis_str))
         # print score_line
-        self.meteor_p.stdin.write('{}\n'.format(score_line.encode('utf-8')))
+        self.meteor_p.stdin.write('{}\n'.format(score_line).encode('utf-8'))
         return self.meteor_p.stdout.readline().strip()
 
     def _score(self, hypothesis_str, reference_list):

@@ -19,8 +19,8 @@ def precook(s, n=4, out=False):
     """
     words = s.split()
     counts = defaultdict(int)
-    for k in xrange(1,n+1):
-        for i in xrange(len(words)-k+1):
+    for k in range(1,n+1):
+        for i in range(len(words)-k+1):
             ngram = tuple(words[i:i+k])
             counts[ngram] += 1
     return counts
