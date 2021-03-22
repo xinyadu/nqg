@@ -55,10 +55,11 @@ class Rouge():
         rec = []
 
         # split into tokens
-        token_c = candidate[0].split(" ")
+        token_c = candidate[0].decode().split(" ")
     	
         for reference in refs:
             # split into tokens
+            reference = reference.decode()
             token_r = reference.split(" ")
             # compute the longest common subsequence
             lcs = my_lcs(token_r, token_c)
